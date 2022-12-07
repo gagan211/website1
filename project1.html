@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url("img1.jpg");
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 15px;
+    }
+
+    .mid {
+        display: block;
+        margin: 8px auto;
+        width: 42%;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .left img {
+        width: 69px;
+    }
+
+    .left div {
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 5px;
+        color: white;
+        background-color: black;
+        padding: 3px 9px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 2px solid grey;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(34, 33, 33);
+    }
+
+    .container {
+        border: 2px solid chartreuse;
+        border-radius: 15px;
+        margin: 118px 116px;
+        padding: 0px 14px;
+        width: 30%;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        padding: 5px 54px;
+        display: block;
+        width: 227px;
+        margin: 13px auto;
+        font-size: 13px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        width: 25%;
+        display: block;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img2.jpg" alt="">
+            <div>gold fit</div>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" >Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for rest option -->
+        <div class="right">
+            <button class="btn">Call Us </button> <button class="btn">EMail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Take Our Membership Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Enter Your text">
+            </div>
+            <div class="form-group">
+                <input type="text" name="City" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Phone number" placeholder="Enter Your Phno">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your EMail">
+            </div>
+        </form>
+        <button class="btn">SUBMIT</button>
+    </div>
+</body>
+
+</html>
